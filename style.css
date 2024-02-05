@@ -1,0 +1,10 @@
+.main{
+    justify-content: center;
+    display: block;
+}
+.card{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #f4a460;
+}
