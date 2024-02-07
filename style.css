@@ -2,11 +2,26 @@
     body {
       background-color: lightgray;
     }
-  }
-body{
+}
+
+body {
     margin: 0;
 }
-.navbar{
+
+/* Reset default styles */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Style for list items */
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar {
     width: 100%;
     background-color: aquamarine;
     display: flex;
@@ -14,44 +29,70 @@ body{
     padding: 0 10px; /* Adjust the padding as needed */
     padding-bottom: 15px;
 }
-.navbar-links{
+
+.navbar-links {
     padding-left: 10px;
 }
-.navbar-header{
-    float: left;
+
+#aboutme, #work, #contactme {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Align items vertically in each flex container */
 }
-.navbar-right{
-    float: right;
-    
+
+#aboutme > div, #work > div, #contactme > div {
+    flex: 1;
+    padding: 10px 20px 10px 10px; /* Add spacing between elements */
 }
-.mid-section{
+
+.profile-picture {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mid-section {
     width: 100%;
     height: 250px;
     background-color: azure;
     padding-bottom: 15px;
 }
-.about-me{
+
+#aboutme {
     background-color: blanchedalmond;
     width: 100%;
     padding-bottom: 15px;
+    height: fit-content;
 }
-.about-me-right{
-    padding-left: 20px;
-}
-.work{
+
+#work {
     background-color: lightcyan;
     width: 100%;
-    height:300px;
+    height: auto;
     padding-bottom: 15px;
 }
-.contact-me{
-    width: 100%;
-    
+
+.contact-me ul {
+    list-style: none;
 }
-.contact-me-right{
+
+.contact-me li {
+    display: inline-block;
+}
+
+.contact-me-right {
     padding-left: 20px;
     justify-content: space-between;
 }
-.contact-me-right > a{
+
+.contact-me-right > a {
     padding-left: 5px;
+}
+
+.application img {
+    height: auto;
+    width: auto;
+    border-radius: 5%;
+    object-fit: cover;
 }
